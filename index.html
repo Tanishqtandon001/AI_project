@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediRelax - Your Medication & Relaxation Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>MediRelax</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#chat">Try Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Personal Medication & Relaxation Assistant</h1>
+            <p>Get personalized medication guidance, relaxation exercises, and diet plans based on your health conditions</p>
+            <a href="#chat" class="cta-button">Start Chat</a>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/600/400" alt="MediRelax Bot Illustration">
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-pills"></i>
+                </div>
+                <h3>Medication Guidance</h3>
+                <p>Get detailed information about medication dosage and timing</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <h3>Diet Recommendations</h3>
+                <p>Learn which foods to eat and avoid for your specific condition</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                </div>
+                <h3>Alternative Medicines</h3>
+                <p>Discover alternative options when your prescribed medication isn't available</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <h3>Exercise Suggestions</h3>
+                <p>Receive tailored exercise recommendations for better recovery</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Enter Your Condition</h3>
+                    <p>Type your medical condition or medication name in the chat</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Get Personalized Advice</h3>
+                    <p>Receive detailed information about medications, timing, and diet</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Follow Your Plan</h3>
+                    <p>Implement the suggested relaxation exercises and diet plan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chat" class="chat-section">
+        <h2>Talk to MediRelax</h2>
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hi there! I'm MediRelax, your medication and relaxation assistant. Tell me about your condition or medication, and I'll provide personalized guidance.</p>
+                    </div>
+                </div>
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your condition or medication...">
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="response-template" class="response-template">
+        <h2>Sample Response Template</h2>
+        <div class="response-example">
+            <h3>Response for: Hypertension</h3>
+            <div class="response-content">
+                <div class="medication-section">
+                    <h4>Recommended Medication</h4>
+                    <p><strong>Amlodipine 5mg</strong> - Take once daily in the morning</p>
+                    <p><strong>Alternatives:</strong> Lisinopril 10mg, Losartan 50mg</p>
+                </div>
+                
+                <div class="diet-section">
+                    <h4>Diet Recommendations</h4>
+                    <div class="diet-lists">
+                        <div class="recommended-foods">
+                            <h5>Foods to Include:</h5>
+                            <ul>
+                                <li>Leafy greens (spinach, kale)</li>
+                                <li>Berries and bananas</li>
+                                <li>Whole grains</li>
+                                <li>Low-fat dairy products</li>
+                            </ul>
+                        </div>
+                        <div class="foods-to-avoid">
+                            <h5>Foods to Avoid:</h5>
+                            <ul>
+                                <li>High sodium foods</li>
+                                <li>Processed meats</li>
+                                <li>Caffeinated beverages</li>
+                                <li>Alcohol</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-section">
+                    <h4>Recommended Exercises</h4>
+                    <div class="exercises">
+                        <div class="exercise">
+                            <h5>Deep Breathing</h5>
+                            <img src="/api/placeholder/200/150" alt="Deep Breathing Exercise">
+                            <p>Practice deep breathing for 5 minutes, 3 times daily</p>
+                        </div>
+                        <div class="exercise">
+                            <h5>Walking</h5>
+                            <img src="/api/placeholder/200/150" alt="Walking Exercise">
+                            <p>30 minutes of brisk walking daily</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="additional-tips">
+                    <h4>Additional Tips</h4>
+                    <p>Monitor your blood pressure regularly and maintain a consistent sleep schedule. Reduce stress through mindfulness meditation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message"></textarea>
+            </div>
+            <button class="submit-button">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heartbeat"></i>
+                <h3>MediRelax</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#chat">Try Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MediRelax. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
